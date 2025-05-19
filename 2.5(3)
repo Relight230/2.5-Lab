@@ -1,0 +1,11 @@
+import random
+arr = [random.randint(1, 100) for _ in range(10)]
+
+def filter_nums(el):
+    if el % 2 == 0:
+        return False
+    else:
+        return True
+
+output_filter = filter(filter_nums, arr)
+print("Возрастающий массив из случайных чисел: ", list(sorted(output_filter)))
