@@ -1,0 +1,14 @@
+arr = [2, 4, 5, 0, -10, -4, -5]
+invert_arr = []
+
+for el in arr:
+    if el > 0:
+        el = -el
+        invert_arr.append(el)
+    elif el < 0:
+        el = el
+        invert_arr.append(-el)
+    else:
+        invert_arr.append(el)
+
+print(invert_arr)
