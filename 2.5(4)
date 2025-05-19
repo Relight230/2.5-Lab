@@ -1,0 +1,6 @@
+String = input("Введите строку: ")
+if String.startswith('abc'):
+    result = String.replace('abc', 'www')
+    print(result)
+else:
+    print(String + ('zzz'))
