@@ -1,0 +1,7 @@
+def math():
+    a = int(input("Введите число а: "))
+    b = int(input("Введите число b: "))
+    result = (a + 4 * b) * (a - 3 * b) + 2 * a
+    print(result)
+
+math()
