@@ -1,0 +1,14 @@
+def coordinates(point_x, point_y, center_x, center_y, radius):
+    distance_squared = (point_x - center_x) ** 2 + (point_y - center_y) ** 2
+
+    return distance_squared <= radius ** 2
+
+center_x = 5
+center_y = 5
+radius = 3
+
+point1 = (3, 4)
+point2 = (9, 8)
+
+print(f"Точка {point1} в круге?:  {coordinates(*point1, center_x, center_y, radius)}")
+print(f"Точка {point2} в круге?:  {coordinates(*point2, center_x, center_y, radius)}")
