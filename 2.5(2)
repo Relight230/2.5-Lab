@@ -1,0 +1,23 @@
+def homework():
+    arr = [-1, -2, -4, -5, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    positive_nums = []
+    for el in arr:
+        if el > 0:
+            positive_nums.append(el)
+    min_el = min(positive_nums)
+    max_el = max(positive_nums)
+    print("Все положительные числа: ", positive_nums)
+
+    sum_of_positive = sum(positive_nums)
+    print("Сумма всех положительных чисел: ", sum_of_positive)
+
+    result = [i for i in range(min_el + 1, max_el)]
+    print("Все положительные числа без минимального и максимального элемента: ", result)
+
+    product = 1
+    for nums in result:
+        product *= nums
+    print("Произведение всех положительных чисел между минимальным и максимальным элементом: ", product)
+    return result, positive_nums
+
+homework()
